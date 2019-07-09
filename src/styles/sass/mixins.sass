@@ -1,0 +1,41 @@
+@import 'variables.sass'
+
+@mixin flex($direction, $horizontal-center: false, $vertical-center: false)
+    display: flex
+    flex-direction: $direction
+    @if $horizontal-center
+        align-items: center
+    @if $vertical-center 
+        justify-content: center
+
+// fonts loader
+@mixin fontFace($font, $fontfile: $font)
+    @font-face 
+        font-family: $font
+        src: url("../fonts/#{$fontfile}.ttf") format('truetype')
+
+@mixin btnWithIcon($name)
+    .icon-btn-#{$name}
+        background: $white url("../../images/#{$name}_black.svg") no-repeat 95% 50%
+        background-size: $iconSize
+        padding-right: 30px
+
+        &.icon-white-#{$name}
+            background: $grey url("../../images/#{$name}_white.svg") no-repeat 95% 50%
+            background-size: $iconSize
+            padding-right: 30px
+
+        &:disabled
+            background: $white url("../../images/#{$name}_grey.svg") no-repeat 95% 50%
+            background-size: $iconSize
+        
+        &:hover
+            background: $white url("../../images/#{$name}_white.svg") no-repeat 95% 50%
+            background-size: $iconSize
+            color: $black
+            background-color: $black
+            color: $white
+
+            &:disabled
+                background: $white url("../../images/#{$name}_grey.svg") no-repeat 95% 50%
+                background-size: $iconSize

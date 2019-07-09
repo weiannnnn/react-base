@@ -1,0 +1,70 @@
+@import 'variables'
+
+// Set default font as font
+body
+    font-family: $font
+    background-color: $lessWhite
+
+    input, select, textarea, button
+        font-family: inherit
+
+.main-content-section
+    width: 100%
+    height: 100%
+    justify-content: center
+    background-color: $lessWhite
+
+    .main-body-container
+        justify-content: center
+        margin-top: 300px
+        background-color: $lessWhite
+
+.feed-icon
+    margin-right: 10px
+    height: $largeIconSize
+    width: $largeIconSize
+    vertical-align: middle
+
+    &.delivery-note
+        height: $smallIconSize
+        width: $smallIconSize
+        margin-right: 51px
+
+    &.up
+        background: $white url("../../images/caret_up_icon_black.svg") no-repeat center
+
+    &.down
+        background: $white url("../../images/caret_down_icon_black.svg") no-repeat center
+
+.header-section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-self: center
+    
+    .header-top
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+                margin-top: 20px
+
+        .header-left
+            display: flex
+            flex-direction: row
+
+            .icon-left
+                margin-right: 5px
+                height: $largeIconSize
+
+        .modal-title
+            font-size: $largeFontSize
+            font-family: $boldFont
+            align-self: center
+
+        .header-together-left
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+
+.close-btn
+    cursor: pointer

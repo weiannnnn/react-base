@@ -1,0 +1,38 @@
+@import 'variables'
+
+.btn-basic-style
+    background-color: $white
+    height: 35px
+    cursor: pointer
+    border: 1px solid $black
+    border-radius: 3px
+    font-size: $mediumFontSize
+    font-family: $font
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    &.hide
+        display: none
+
+    &:hover
+        background-color: $black
+        color: $white
+
+    &:disabled
+        border: 1px solid $grey
+        color: $grey
+        pointer-events: none
+
+        &:hover
+            background-color: $white
+    
+
+.btn-active
+    background-color: $grey
+    border: 2px solid $black
+    color: $white
+
+    &:hover
+        background-color: $black
+        color: $white

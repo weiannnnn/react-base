@@ -1,0 +1,55 @@
+@import 'variables'
+
+.notification-section
+    width: 100%
+    z-index: 2
+    top: 55px
+    position: fixed
+    z-index: 8
+    background-color: $white
+
+.notification-content
+    margin: 30px
+    display: flex
+    flex-direction: column
+
+.notification-boxes-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    transition: all 0.2s ease
+    visibility: hidden
+    opacity: 0
+    height: 0px
+
+    &.show
+        opacity: 1
+        visibility: visible
+        height: 120px
+
+    .notification-box
+        padding: 20px
+        box-shadow: 0px 2px 3px 0px $notificationsBoxShadow
+        width: 300px
+        height: 60px
+        margin-right: 80px
+        margin-top: 20px
+        font-size: $smallFontSize
+        display: flex
+
+        .notification-text
+            align-self: center
+            user-select: none
+
+        img
+            height: 48px
+            width: 48px
+            user-select: none
+
+.notifications-title
+    font-family: $boldFont
+    font-size: $largeFontSize
+    color: $black
+    display: flex
+    flex-direction: row
+    justify-content: space-between

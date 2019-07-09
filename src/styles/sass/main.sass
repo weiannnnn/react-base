@@ -1,0 +1,27 @@
+@import 'variables.sass'
+@import 'mixins'
+@import 'header'
+@import 'general'
+@import 'burger-menu'
+@import 'buttons'
+@import 'login'
+
+// fonts
+@include fontFace('Cronos-Pro', 'Cronos-Pro')
+@include fontFace('Cronos-Pro-Semibold', 'Cronos-Pro-Semibold')
+
+html, body
+  padding: 0
+  margin: 0
+  height: 100vh
+  width: 100vw
+
+#root 
+  height: 100%
+  @media screen and (min-width: $tablet-width), screen and (min-width: $laptop-width) 
+    // margin: 0 $full-margins;
+
+  @media screen and (min-width: $mobile-width), screen and (min-width: $tablet-width)
+    // margin: 0 $tablet-margins;
+  @media screen and (max-width: $mobile-width) 
+    // margin: 0 $mobile-margins;

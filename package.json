@@ -39,7 +39,7 @@
     "mini-css-extract-plugin": "^0.4.3",
     "moment": "^2.22.2",
     "net": "^1.0.2",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.3",
     "precss": "^3.1.2",
     "prop-types": "^15.7.2",

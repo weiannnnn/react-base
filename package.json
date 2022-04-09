@@ -37,7 +37,7 @@
     "flexicon": "^0.4.0",
     "jest": "^24.1.0",
     "mini-css-extract-plugin": "^0.4.3",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "net": "^1.0.2",
     "node-sass": "^4.9.3",
     "postcss": "^7.0.3",
